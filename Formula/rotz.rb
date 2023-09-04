@@ -1,3 +1,5 @@
+require "open3"
+
 class Rotz < Formula
   desc "Fully cross platform dotfile manager and dev environment bootstrapper"
   homepage "https://volllly.github.io/rotz/"
@@ -15,9 +17,11 @@ class Rotz < Formula
   test do
     assert_match "rotz #{version}\n", shell_output("#{bin}/rotz -V")
 
-    err = capture(:stderr) { system bin/"rotz", "link" }
+    out, status = Open3.capture2a("rotz link")
 
-    assert_match(/Error: dotfiles::walk/, err)
-    assert_match(/The system cannot find the file specified/, err)
+    assert_not_equal(0, status)
+
+    assert_match(/Error: dotfiles::walk/, out)
+    assert_match(/The system cannot find the file specified/, out)
   end
 end
