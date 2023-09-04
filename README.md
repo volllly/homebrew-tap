@@ -2,7 +2,7 @@
 
 ## How do I install these formulae?
 
-`brew install volllly/repo/<formula>`
+`brew install volllly/tap/<formula>`
 
 Or `brew tap volllly/tap` and then `brew install <formula>`.
 
