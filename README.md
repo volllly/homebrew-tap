@@ -4,7 +4,7 @@
 
 `brew install volllly/repo/<formula>`
 
-Or `brew tap volllly/repo` and then `brew install <formula>`.
+Or `brew tap volllly/tap` and then `brew install <formula>`.
 
 ## Documentation
 
