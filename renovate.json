@@ -5,6 +5,9 @@
   ],
   "packageRules": [
     {
+      "matchDatasources": [
+        "github-tags"
+      ],
       "commitMessageTopic": "Homebrew Formula {{depName}}",
       "fileMatch": [
         "^Formula/[^/]+[.]rb$"
