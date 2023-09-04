@@ -17,7 +17,7 @@ class Rotz < Formula
   test do
     assert_match "rotz #{version}\n", shell_output("#{bin}/rotz -V")
 
-    out, status = Open3.capture2a("rotz link")
+    out, status = Open3.capture2e("rotz link")
 
     assert_not_equal(0, status)
 
