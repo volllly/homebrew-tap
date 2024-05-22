@@ -3,8 +3,8 @@ require "open3"
 class Rotz < Formula
   desc "Fully cross platform dotfile manager and dev environment bootstrapper"
   homepage "https://volllly.github.io/rotz/"
-  url "https://github.com/volllly/rotz/archive/refs/tags/v0.9.5.tar.gz"
-  sha256 "6b6742ffbcd2013c394fa3f50b6890eb84c5b7e9e2854daecfdc3cbd4106f3dc"
+  url "https://github.com/volllly/rotz/archive/refs/tags/v0.10.0.tar.gz"
+  sha256 "e4494f274c8f32b9771a7f4a0dc198cc098c967517908f6d7099e0a44937c700"
   license "MIT"
   head "https://github.com/volllly/rotz.git", branch: "main"
 
